@@ -42,14 +42,15 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
+        // 1.2.0 - add support for Wiki plugin (kanboard-plugin-wiki) pages
         // 1.1.0 - remove custom image box implementation: the image isn't displayed anymore in Firefox 126 & 127
         //         just display the result from the image controller. 
-        return '1.1.0';
+        return '1.2.0';
     }
 
     public function getPluginDescription()
     {
-        return 'enable pasting images to markdown-enbaled textfields';
+        return 'enable pasting images to markdown-enabled textfields (supports Tasks and Wiki)';
     }
     
     public function getPluginHomepage()
